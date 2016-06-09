@@ -2,25 +2,25 @@ $(document).ready(function(){
 // album
 var amt = 10,m={};
 
-function src(){ 
-	var nm; 
-	return nm = ((new Date).getMilliseconds() % amt + 1), (nm < 10 ? '/mcard/resource/images/0'+nm : './img/'+nm) + '.jpg'; 
+function src(){
+	var nm;
+	return nm = ((new Date).getMilliseconds() % amt + 1), (nm < 10 ? '/mcard/resource/images/0'+nm : './img/'+nm) + '.jpg';
 }
 
-function gen(){ 
-	var i=0,v,m={}; 
-	do{ 
-		v = src(); 
-		if(m[v]) continue; 
+function gen(){
+	var i=0,v,m={};
+	do{
+		v = src();
+		if(m[v]) continue;
 		i++, m[v] = true, $('#album' + i).attr('src',v);
 	}
-	while(i < 5); 
+	while(i < 5);
 }
 
 gen();
 
 // reply
-var fb = new Firebase('https://kangki.firebaseio.com/'), num = 0;
+var fb = new Firebase('https://larcken.firebaseio.com/'), num = 0;
 
 function addReply(data){
 		num += 1;
@@ -36,7 +36,7 @@ $('#btnReplay').on('click',function(e){
 	var name = $('#name').val(), message = $('#message').val();
 	if(name && message) {
 		fb.push({name:name,message:message});
-		$('#message').val('');		
+		$('#message').val('');
 	}
 });
 
