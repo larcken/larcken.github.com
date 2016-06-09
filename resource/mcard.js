@@ -1,6 +1,6 @@
 $(document).ready(function(){
 // album
-var amt = 10,m={};
+var amt = 5,m={};
 
 function src(){
 	var nm;
@@ -14,7 +14,7 @@ function gen(){
 		if(m[v]) continue;
 		i++, m[v] = true, $('#album' + i).attr('src',v);
 	}
-	while(i < 5);
+	while(i < 4);
 }
 
 gen();
