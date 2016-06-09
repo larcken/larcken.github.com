@@ -4,7 +4,7 @@ var amt = 10,m={};
 
 function src(){
 	var nm;
-	return nm = ((new Date).getMilliseconds() % amt + 1), (nm < 6 ? '/resource/images/0'+nm : './img/'+nm) + '.jpg';
+	return nm = ((new Date).getMilliseconds() % amt + 1), '/resource/images/0' + nm + '.jpg';
 }
 
 function gen(){
