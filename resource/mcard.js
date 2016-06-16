@@ -1,10 +1,10 @@
 $(document).ready(function(){
 // album
-var amt = 5,m={};
+var amt = 0,m={};
 
 function src(){
-	var nm;
-	return nm = ((new Date).getMilliseconds() % amt + 1), '/resource/images/0' + nm + '.jpg';
+	var nm = ;
+	return nm = amt + 1, '/resource/images/0' + nm + '.jpg';
 }
 
 function gen(){
@@ -14,7 +14,7 @@ function gen(){
 		if(m[v]) continue;
 		i++, m[v] = true, $('#album' + i).attr('src',v);
 	}
-	while(i < 4);
+	while(i < 5);
 }
 
 gen();
