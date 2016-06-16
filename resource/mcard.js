@@ -1,32 +1,13 @@
 $(document).ready(function(){
-// album
-var amt = 0,m={};
-
-function src(){
-	var nm = ;
-	return nm = amt + 1, '/resource/images/0' + nm + '.jpg';
-}
-
-function gen(){
-	var i=0,v,m={};
-	do{
-		v = src();
-		if(m[v]) continue;
-		i++, m[v] = true, $('#album' + i).attr('src',v);
-	}
-	while(i < 5);
-}
-
-gen();
 
 // reply
 var fb = new Firebase('https://larcken.firebaseio.com/'), num = 0;
 
 function addReply(data){
 		num += 1;
-	 	var text = '<tr><td>';
-  	text 		+= '<h4 class="list-group-item-heading">['+num+'] '+data.name+'</h4>';
-  	text 		+= '<p class="list-group-item-text">'+data.message+'</p></td></tr>';
+	 	var text = '<ul class="collection with-header">';
+  	text 		+= '<li class="collection-header"><h4>['+num+'] '+data.name+'</h4></li>';
+  	text 		+= '<li class="collection-item">'+data.message+'</li></ul>';
 
 		$('#view').prepend(text);
 }
