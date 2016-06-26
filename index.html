@@ -26,15 +26,15 @@
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="brand-logo">Logo</a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">PICTURE</a></li>
-        <li><a href="#">BOARD</a></li>
+        <li><a href="javascript:window.scrollTo(0,0);">HOME</a></li>
+        <li><a href="javascript:scrollLink('gallery');">PICTURE</a></li>
+        <li><a href="javascript:scrollLink('gallery');">BOARD</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">PICTURE</a></li>
-        <li><a href="#">BOARD</a></li>
+        <li><a href="javascript:window.scrollTo(0,0);">HOME</a></li>
+        <li><a href="javascript:scrollLink('gallery');">PICTURE</a></li>
+        <li><a href="javascript:scrollLink('gallery');">BOARD</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
@@ -145,13 +145,7 @@
           <h3><i class="mdi-content-send brown-text"></i></h3>
           <h4>Contact Us</h4>
           <p class="left-align light">내 연락처는 말입니다...ㅎㅎ</p>
-          <table cellpadding="0" cellspacing="0" width="536">
-            <tr>
-              <td style="border:0px solid #cecece; text-align:center;">
-                <a href="http://map.naver.com/?menu=location&mapMode=0&lat=37.4492032&lng=127.1273152&dlevel=12&searchCoord=127.1270954%3B37.450203&query=6rCA7LKc7Luo67Kk7IWY7IS87YSw&mpx=02131107%3A37.450203%2C127.1270954%3AZ12%3A0.0070934%2C0.0054669&tab=1&enc=b64" target="_blank"><img src="http://prt.map.naver.com/mashupmap/print?key=p1466096653171_444112435" width="534" height="418" alt="지도 크게 보기" title="지도 크게 보기" border="0" style="vertical-align:top;"/></a>
-              </td>
-            </tr>
-          </table>
+          <div id="map" style="width:100%;height:400px;"></div>
         </div>
       </div>
 
@@ -205,6 +199,7 @@
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script src='/resource/lib/firebase/firebase.js'></script>
+  <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=x8BTcLzMZlPTEfxhx8xN"></script>
   <script src="/resource/mcard.js"></script>
   <script>
   $(document).ready(function(){
