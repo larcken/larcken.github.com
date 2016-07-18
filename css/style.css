@@ -34,14 +34,14 @@ body {
 }
 
 .main_subtitle1 {
-  letter-spacing: 15px;
+  letter-spacing: 5px;
   color: #FFF;
   text-shadow: 0 0 10px #cf6b75;
   margin-bottom: 50px;
 }
 
 .main_subtitle2 {
-  letter-spacing: 15px;
+  letter-spacing: 5px;
   color: #FFF;
   text-shadow: 0 0 10px #1a6d24;
 }
