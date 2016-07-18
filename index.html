@@ -27,14 +27,16 @@
       <a id="logo-container" href="#" class="brand-logo">INVITATION</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="javascript:window.scrollTo(0,0);">HOME</a></li>
-        <li><a href="javascript:scrollLink('gallery');">PICTURE</a></li>
-        <li><a href="javascript:scrollLink('gallery');">BOARD</a></li>
+        <li><a href="javascript:scrollLink('gallery');">GALLERY</a></li>
+        <li><a href="javascript:scrollLink('access');">ACCESS</a></li>
+        <li><a href="javascript:scrollLink('board');">BOARD</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
         <li><a href="javascript:window.scrollTo(0,0);">HOME</a></li>
-        <li><a href="javascript:scrollLink('gallery');">PICTURE</a></li>
-        <li><a href="javascript:scrollLink('gallery');">BOARD</a></li>
+        <li><a href="javascript:scrollLink('gallery');">GALLERY</a></li>
+        <li><a href="javascript:scrollLink('access');">ACCESS</a></li>
+        <li><a href="javascript:scrollLink('board');">BOARD</a></li>
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
@@ -46,9 +48,9 @@
         <br><br>
         <h1 class="header center main_title">결혼합니다</h1>
         <div class="row center">
-          <h3 class="header center main_subtitle1">한동선 ♥ 박수진</h3>
-          <h3 class="header center main_subtitle2">9월 3일 오전 11시</h3>
-          <h3 class="header center main_subtitle2">가천컨벤션</h3>
+          <h4 class="header center main_subtitle1">한동선 ♥ 박수진</h4>
+          <h5 class="header center main_subtitle2">9월 3일 오전 11시</h5>
+          <h5 class="header center main_subtitle2">가천컨벤션</h5>
         </div>
         <br><br>
 
@@ -100,7 +102,7 @@
     <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
   </div-->
 
-  <div class="container">
+  <div id='gallery' class="container">
     <div class="section">
 
       <div class="row">
@@ -110,12 +112,13 @@
             <h4>GALLERY</h4>
           </div>
 
-          <div  class="carousel">
-            <a class="carousel-item" href="#one!"><img src="/resource/images/01.jpg"></a>
-            <a class="carousel-item" href="#one1!"><img src="/resource/images/02.jpg"></a>
-            <a class="carousel-item" href="#one!1"><img src="/resource/images/03.jpg"></a>
-            <a class="carousel-item" href="#one2!"><img src="/resource/images/04.jpg"></a>
-            <a class="carousel-item" href="#one2!"><img src="/resource/images/05.jpg"></a>
+          <div class='row'>
+            <img  class="responsive-img" src="/resource/images/01.jpg" />
+            <img  class="responsive-img" src="/resource/images/02.jpg" />
+            <img  class="responsive-img" src="/resource/images/03.jpg" />
+            <img  class="responsive-img" src="/resource/images/04.jpg" />
+            <img  class="responsive-img" src="/resource/images/05.jpg" />
+            <img  class="responsive-img" src="/resource/images/06.jpg" />
           </div>
         </div>
       </div>
@@ -123,7 +126,7 @@
     </div>
   </div>
 
-  <div class="container">
+  <div id='access' class="container">
     <div class="section">
 
       <div class="row">
@@ -135,7 +138,10 @@
           <div id="map" style="width:100%;height:400px;"></div>
 
           <div class="section">
-            <img style='width:100%; max-width:500px;' src="/resource/images/location.png">
+            <h4>가천컨벤션 5층</h4>
+            <div>
+              <img style='width:100%; max-width:500px;' src="/resource/images/location.png">
+            </div>
           </div>
         </div>
       </div>
@@ -143,7 +149,7 @@
     </div>
   </div>
 
-  <div class="container">
+  <div id='board' class="container">
     <div class="section">
 
       <div class="row">
